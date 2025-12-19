@@ -17,6 +17,7 @@
   "author": "ClearCity Team",
   "license": "MIT",
   "dependencies": {
+    "@vercel/blob": "^2.0.0",
     "axios": "^1.13.2",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
@@ -31,6 +32,6 @@
   },
   "engines": {
     "node": ">=14.0.0",
-    "npm": ">=6.0.0" 
+    "npm": ">=6.0.0"
   }
 }
