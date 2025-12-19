@@ -1,5 +1,5 @@
 import React from 'react';
-import { Leaf, CheckCircle, Trophy, Recycle, Trash2, Info, Battery, ArrowRight } from 'lucide-react';
+import { Leaf, CheckCircle, Trophy, Recycle, Trash2, Info, Battery, ArrowRight, Loader2 } from 'lucide-react';
 
 const GlassCard = ({ children, className = "", onClick, darkMode }) => (
   <div
@@ -102,9 +102,9 @@ export default function HomePage({ darkMode, leaderboard = [], currentUser, onUp
                   {index === 0 && <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#0df259]"></div>}
 
                   <div className={`flex items-center justify-center w-8 h-8 rounded-full font-bold text-sm shrink-0 ${index === 0 ? 'bg-[#0df259] text-[#102216] shadow-lg shadow-[#0df259]/20 group-hover:scale-110' :
-                      index === 1 ? 'bg-gray-400 text-white' :
-                        index === 2 ? 'bg-orange-600 text-white' :
-                          'bg-gray-700 text-white'
+                    index === 1 ? 'bg-gray-400 text-white' :
+                      index === 2 ? 'bg-orange-600 text-white' :
+                        'bg-gray-700 text-white'
                     } transition-transform`}>
                     {index + 1}
                   </div>
